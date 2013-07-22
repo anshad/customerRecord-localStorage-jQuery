@@ -130,8 +130,5 @@ function editCustomer(id){
 function validateEmail(str) {
    var emailRegexStr = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
    var isvalid = emailRegexStr.test(str); 
-   //if (!isvalid) {
-    // alert('Invalid email address!');
-  // }
-  return isvalid;
+   return isvalid;
 }
