@@ -15,11 +15,11 @@ Clear all records.
 Screen-Shot
 ===========
 
-![Alt text](/screen/screen-shot.png "Home Page")	
+![customerRecord App](/screen/screen-shot.png "customerRecord Dashboard")	
 
 Reference
 ===========
 
 jQuery http://jquery.com/	
 Twitter Bootstrap http://twitter.github.io/bootstrap/	
-Mozilla Developer https://developer.mozilla.org/	
+Mozilla Developer Network https://developer.mozilla.org/	
