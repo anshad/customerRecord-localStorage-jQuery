@@ -17,6 +17,13 @@ Screen-Shot
 
 ![customerRecord App](/screen/screen-shot.png "customerRecord Dashboard")	
 
+
+Demo
+===========
+
+http://www.idevoc.com/snippets/customerRecord-localStorage-jQuery/
+
+
 Reference
 ===========
 
