@@ -9,20 +9,17 @@ $(document).ready(function(){
         // load records table on load
         getRecords(); 
 
-        // Add New customer
+        // Display form
         $("#addnew").click(function(){
             // show bootstrap modal
             $('#form-Modal').modal('show');
-            // focus the input field
-            $("#fname").focus();
-
         });
-
-        
 
         // submit form
         $("#customer-form").submit(function(e){
             e.preventDefault(); // prevent default page refresh and submit
+
+            // key for the storage
             var customer_id = $("#customer_id").val();
             if(customer_id != ""){
                 itemId = customer_id;
@@ -47,7 +44,7 @@ $(document).ready(function(){
             // if all fields are filled
             if (first_name != "" && last_name != "" && phone != "" && email != "" && validateEmail(email)) {
                 try {
-                    localStorage.setItem(itemId,JSON.stringify(values));
+                    localStorage.setItem(itemId,JSON.stringify(values)); // set storage
                     getRecords(); // load records table
                     $("#customer-form input").val(""); // clear fields
                     $('#form-Modal').modal('hide');
@@ -57,13 +54,12 @@ $(document).ready(function(){
                     }
                     console.log(e);
                 }
-            } else {
+            } else { // validation errors
                 if(!validateEmail(email)) {
                    alert("Invalid E-mail ID.");
                 } else {
                    alert("All fields are required.");
                 }
-               
             }
         }); // end form submit
 
@@ -96,7 +92,7 @@ function getRecords() {
           for (var i = 0; i < localStorage.length; i++) { // loop through keys
             var customers = JSON.parse(localStorage.getItem(localStorage.key(i)));
             var sno = i+1;
-            content+="<tr><td>"+sno+"</td><td>"+customers[0]+" "+customers[1]+"</td><td>"+customers[2]+"</td><td><a href='mailto:"+customers[3]+"'>"+customers[3]+"</a></td><td><a href='#' title='Edit' onclick='editCustomer(\""+localStorage.key(i)+"\")'><i class='icon-edit'></i></a><a href='#' onclick='deleteCustomer(\""+localStorage.key(i)+"\")' title='Delete'><i class='icon-trash'></i></a></td></tr>";
+            content+="<tr><td>"+sno+"</td><td>"+customers[0]+" "+customers[1]+"</td><td>"+customers[2]+"</td><td><a href='mailto:"+customers[3]+"'>"+customers[3]+"</a></td><td><a href='#' title='Edit' onclick='editCustomer(\""+localStorage.key(i)+"\")'><span class='glyphicon glyphicon-edit'></span></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#' onclick='deleteCustomer(\""+localStorage.key(i)+"\")' title='Delete'><span class='glyphicon glyphicon-trash'></span></a></td></tr>";
             $("#records tbody").html(content);
           }
       }
