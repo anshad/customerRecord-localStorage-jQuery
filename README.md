@@ -23,5 +23,5 @@ Reference
 ===========
 
 jQuery http://jquery.com/	
-Twitter Bootstrap http://twitter.github.io/bootstrap/	
+Twitter Bootstrap http://getbootstrap.com/	
 Mozilla Developer Network https://developer.mozilla.org/	
