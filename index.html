@@ -21,19 +21,19 @@
 		    </button>
 		    <br><br>
 		    <table class="table table-bordered" id="records">
-				<thead>
-					<tr>
-						<th>#</th>
-						<th>Full Name</th>
-						<th>Phone</th>
-						<th>Email</th>
-						<th>Action</th>
-					</tr>
-				</thead>
-				<tbody>
-					<!-- Dynamic Contents will be loaded here -->
-				</tbody>
-	        </table>
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>Full Name</th>
+					<th>Phone</th>
+					<th>Email</th>
+					<th>Action</th>
+				</tr>
+			</thead>
+			<tbody>
+				<!-- Dynamic Contents will be loaded here -->
+			</tbody>
+	            </table>
 		  </div>
 		</div>
 	</div> 
@@ -46,9 +46,7 @@
 	        <h4 class="modal-title" id="myModalLabel">Warning!</h4>
 	      </div>
 	      <div class="modal-body">
-
-			  <p>This will delete all localStorage data, Are you sure ?</p>
-			  
+		<p>This will delete all localStorage data, Are you sure ?</p>
 	      </div>
 	      <div class="modal-footer">
 	        <button type="button" class="btn btn-info" data-dismiss="modal">No</button>
@@ -69,35 +67,34 @@
 	      <form class="form-horizontal" role="form" id="customer-form">
 	      <div class="modal-body">
 
-			  <div class="form-group">
-			    <label for="fname" class="col-sm-4 control-label">First Name</label>
-			    <div class="col-sm-6">
-			    	<input type="text" id="fname" class="form-control" placeholder="First Name" required>
-				    <input type="hidden" id="customer_id">
-			    </div>
-			  </div>
+		<div class="form-group">
+		    <label for="fname" class="col-sm-4 control-label">First Name</label>
+		    <div class="col-sm-6">
+		    	<input type="text" id="fname" class="form-control" placeholder="First Name" required>
+			<input type="hidden" id="customer_id">
+		    </div>
+		</div>
 
-			  <div class="form-group">
-			    <label for="lname" class="col-sm-4 control-label">Last Name</label>
-			    <div class="col-sm-6">
-			    	<input type="text" id="lname" class="form-control" placeholder="Last Name" required>
-			    </div>
-			  </div>
+		<div class="form-group">
+		    <label for="lname" class="col-sm-4 control-label">Last Name</label>
+		    <div class="col-sm-6">
+		    	<input type="text" id="lname" class="form-control" placeholder="Last Name" required>
+		    </div>
+		</div>
 
-			  <div class="form-group">
-			    <label for="phone" class="col-sm-4 control-label">Phone</label>
-			    <div class="col-sm-6">
-			    	<input type="tel" id="phone" class="form-control" placeholder="Phone" required>
-			    </div>
-			  </div>
+		<div class="form-group">
+		    <label for="phone" class="col-sm-4 control-label">Phone</label>
+		    <div class="col-sm-6">
+		    	<input type="tel" id="phone" class="form-control" placeholder="Phone" required>
+		    </div>
+		</div>
 
-			  <div class="form-group">
-			    <label for="email" class="col-sm-4 control-label">E-mail</label>
-			    <div class="col-sm-6">
-			    	<input type="email" id="email" class="form-control" placeholder="E-mail" required>
-			    </div>
-			  </div>
-
+		<div class="form-group">
+		    <label for="email" class="col-sm-4 control-label">E-mail</label>
+		    <div class="col-sm-6">
+		    	<input type="email" id="email" class="form-control" placeholder="E-mail" required>
+		    </div>
+		</div>
 	      </div>
 	      <div class="modal-footer">
 	        <button type="reset" class="btn btn-warning" id="form-reset">Clear</button>
