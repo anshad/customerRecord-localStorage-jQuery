@@ -1,4 +1,5 @@
 // jQuery document ready
+// updated 
 $(document).ready(function(){
 
     'use strict'; // enable strict mode
@@ -174,6 +175,9 @@ $(document).ready(function(){
         
     } // end if support
 }); // end document ready
+
+
+
 
 
 
