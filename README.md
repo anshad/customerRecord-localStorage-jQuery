@@ -22,6 +22,6 @@ Screen-Shot
 Reference
 ===========
 
-jQuery http://jquery.com/	
-Twitter Bootstrap http://getbootstrap.com/	
-Mozilla Developer Network https://developer.mozilla.org/	
+- jQuery http://jquery.com/	
+- Twitter Bootstrap http://getbootstrap.com/	
+- Mozilla Developer Network https://developer.mozilla.org/	
